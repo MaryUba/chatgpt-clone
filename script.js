@@ -1,8 +1,9 @@
 // // Load environment variables
 // require('dotenv').config();
 
-// // Access environment variables
-// const API_KEY = process.env.API_KEY;
+    // Access environment variables
+    const apiKey = process.env.REACT_APP_API_KEY;
+    console.log(apiKey);
 
 const chatInput = document.querySelector("#chat-input");
 const sendButton = document.querySelector("#send-btn");
@@ -12,7 +13,6 @@ const deleteButton = document.querySelector("#delete-btn");
 
 
 let userText = null;
-const API_KEY = "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";
 const initialHeight = chatInput.scrollHeight;
 
 const loadDataFromLocalStorage = () => {
